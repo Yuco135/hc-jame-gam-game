@@ -8,6 +8,10 @@ var can_dash = true
 const JUMP_VELOCITY = -450.0
 var jump_count = 0
 
+const wall_jump_pushback = 400
+const wall_slide_gravity = 50
+
+
 @onready var animated_sprite = $AnimatedSprite2D
  
 func _physics_process(delta: float) -> void:
@@ -22,7 +26,14 @@ func _physics_process(delta: float) -> void:
 		jump_count += 1
 		velocity.y = JUMP_VELOCITY
 		animated_sprite.play("jump")
+	if is_on_wall() and Input.is_action_just_pressed("Right"):
+		velocity.y = JUMP_VELOCITY
+		velocity.x = -wall_jump_pushback
+	if is_on_wall() and Input.is_action_just_pressed("Left"):
+		velocity.y = JUMP_VELOCITY
+		velocity.x = wall_jump_pushback
 		
+	
 	if Input.is_action_just_pressed("Dash") and can_dash:
 		dashing = true 
 		can_dash = false

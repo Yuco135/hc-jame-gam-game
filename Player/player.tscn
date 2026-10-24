@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://b00b4e6qhqayl"]
 
 [ext_resource type="Script" uid="uid://3gv30l2swtxk" path="res://Player/player.gd" id="1_quswe"]
-[ext_resource type="Texture2D" uid="uid://c1pc0xvt42frg" path="res://Player/free-pixel-art-tiny-hero-sprites/1 Pink_Monster/Pink_Monster_Idle_4.png" id="2_gwnis"]
-[ext_resource type="Texture2D" uid="uid://b1ndk2r4bwgg5" path="res://Player/free-pixel-art-tiny-hero-sprites/1 Pink_Monster/Pink_Monster_Jump_8.png" id="3_k53q1"]
-[ext_resource type="Texture2D" uid="uid://dsq65oj3svlga" path="res://Player/free-pixel-art-tiny-hero-sprites/1 Pink_Monster/Pink_Monster_Run_6.png" id="4_fhl08"]
+[ext_resource type="Texture2D" uid="uid://4vn8ayk1bne0" path="res://Player/free-pixel-art-tiny-hero-sprites/3 Dude_Monster/Dude_Monster_Idle_4.png" id="2_gwnis"]
+[ext_resource type="Texture2D" uid="uid://ilosfj3ieplh" path="res://Player/free-pixel-art-tiny-hero-sprites/3 Dude_Monster/Dude_Monster_Jump_8.png" id="3_k53q1"]
+[ext_resource type="Texture2D" uid="uid://t051jab02eyu" path="res://Player/free-pixel-art-tiny-hero-sprites/3 Dude_Monster/Dude_Monster_Run_6.png" id="4_fhl08"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vtle1"]
 atlas = ExtResource("2_gwnis")
@@ -150,7 +150,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w11f4"]
-size = Vector2(124, 204)
+size = Vector2(130, 198)
 
 [node name="player" type="CharacterBody2D" unique_id=220968066]
 position = Vector2(459, 351)
@@ -162,10 +162,10 @@ position = Vector2(32.00003, 106.5)
 scale = Vector2(7.625002, 8.03125)
 sprite_frames = SubResource("SpriteFrames_3sy6q")
 animation = &"jump"
-frame_progress = 0.919291
+frame_progress = 0.66154724
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1319034345]
-position = Vector2(34, 124)
+position = Vector2(39, 131)
 shape = SubResource("RectangleShape2D_w11f4")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=518127805]
