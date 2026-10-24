@@ -3853,36 +3853,35 @@ format = 2
 position = Vector2(1431, 340)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=538478954]
-
-[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1002477336]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -102.5
-offset_right = 89.0
-offset_bottom = 36.0
-grow_horizontal = 2
 script = ExtResource("9_f3v0k")
 
-[node name="Minutes" type="Label" parent="CanvasLayer/Panel" unique_id=749737629]
-layout_mode = 0
-offset_left = 52.0
-offset_right = 94.0
+[node name="Minutes" type="Label" parent="CanvasLayer" unique_id=749737629]
+offset_left = 533.0
+offset_right = 575.0
 offset_bottom = 23.0
 text = "00:"
 
-[node name="Seconds" type="Label" parent="CanvasLayer/Panel" unique_id=1017616316]
-layout_mode = 0
-offset_left = 75.0
-offset_right = 117.0
+[node name="Seconds" type="Label" parent="CanvasLayer" unique_id=1017616316]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -21.0
+offset_right = 21.0
 offset_bottom = 23.0
+grow_horizontal = 2
 text = "16."
 
-[node name="Msecs" type="Label" parent="CanvasLayer/Panel" unique_id=413677644]
-layout_mode = 0
-offset_left = 98.0
-offset_right = 140.0
+[node name="Msecs" type="Label" parent="CanvasLayer" unique_id=413677644]
+offset_left = 578.0
+offset_right = 620.0
 offset_bottom = 23.0
 text = "019"
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1882834567]
+offset_left = 533.0
+offset_top = 21.0
+offset_right = 606.0
+offset_bottom = 25.0
+color = Color(0.18837145, 0.18837145, 0.18837145, 1)
 
 [connection signal="body_entered" from="Checkpoint" to="." method="_on_checkpoint_body_entered"]

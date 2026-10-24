@@ -1,4 +1,4 @@
-extends Panel
+extends CanvasLayer
 
 var time: float = 0.0
 var minutes: int = 0
@@ -12,8 +12,8 @@ func _process(delta: float) -> void:
 	seconds = fmod(time, 60)
 	minutes = fmod(time, 3600) / 60
 	$Minutes.text = "%02d:" % minutes 
-	$Seconds.text = "%02d:" % seconds
-	$Msecs.text = "%03d:" % msec
+	$Seconds.text = "%02d." % seconds
+	$Msecs.text = "%03d" % msec
 	
 func stop() -> void:
 	set_process(false) 
