@@ -162,7 +162,7 @@ position = Vector2(32.00003, 106.5)
 scale = Vector2(7.625002, 8.03125)
 sprite_frames = SubResource("SpriteFrames_3sy6q")
 animation = &"jump"
-frame_progress = 0.7167333
+frame_progress = 0.919291
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1319034345]
 position = Vector2(34, 124)

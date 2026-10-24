@@ -32,7 +32,11 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("Left", "Right")
+	
 	if direction:
+		if dashing:
+			velocity.x = direction * DASH_SPEED
+		else: 
 			velocity.x = direction * SPEED
 			animated_sprite.play("run")
 			animated_sprite.flip_h = direction < 0
@@ -40,9 +44,6 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		animated_sprite.play("idle")
 
-	if dashing:
-			velocity.x = direction * DASH_SPEED
-			
 	move_and_slide()
 	
 func game_over():
@@ -51,7 +52,6 @@ func game_over():
 
 func _on_dash_timer_timeout() -> void:
 	dashing = false
-
 
 func _on_dash_again_timer_timeout() -> void:
 	can_dash = true
