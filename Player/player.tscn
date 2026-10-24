@@ -162,10 +162,18 @@ position = Vector2(32.00003, 106.5)
 scale = Vector2(7.625002, 8.03125)
 sprite_frames = SubResource("SpriteFrames_3sy6q")
 animation = &"jump"
-frame_progress = 0.05685067
+frame_progress = 0.7167333
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1319034345]
 position = Vector2(34, 124)
 shape = SubResource("RectangleShape2D_w11f4")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=518127805]
+
+[node name="dash_timer" type="Timer" parent="." unique_id=484186601]
+wait_time = 0.2
+
+[node name="dash_again_timer" type="Timer" parent="." unique_id=927520372]
+
+[connection signal="timeout" from="dash_timer" to="." method="_on_dash_timer_timeout"]
+[connection signal="timeout" from="dash_again_timer" to="." method="_on_dash_again_timer_timeout"]
