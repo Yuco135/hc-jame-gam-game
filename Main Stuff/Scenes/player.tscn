@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w11f4"]
 size = Vector2(306, 182)
 
-[node name="level_2_player" type="CharacterBody2D" unique_id=220968066]
+[node name="player" type="CharacterBody2D" unique_id=220968066]
 position = Vector2(459, 351)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_quswe")
@@ -19,4 +19,3 @@ position = Vector2(5, 49)
 shape = SubResource("RectangleShape2D_w11f4")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=518127805]
-zoom = Vector2(2, 2)

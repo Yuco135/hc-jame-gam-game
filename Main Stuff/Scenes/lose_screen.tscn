@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d22lgactwynyi"]
 
-[ext_resource type="Script" uid="uid://cfex0b7asb7ha" path="res://Level 1/script/lose_screen_lv_2.gd" id="1_rbp0p"]
-[ext_resource type="Texture2D" uid="uid://4qf666jeofpu" path="res://Art/Level 2/dead caterpillar.webp" id="1_ykf3q"]
+[ext_resource type="Script" uid="uid://cfex0b7asb7ha" path="res://Main Stuff/Script/lose_screen.gd" id="1_2ael3"]
+[ext_resource type="Texture2D" uid="uid://4qf666jeofpu" path="res://Art/Level 2/dead caterpillar.webp" id="2_vm27y"]
 
 [node name="lose_screen_lv2" type="Control" unique_id=1522517263]
 layout_mode = 3
@@ -10,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_rbp0p")
+script = ExtResource("1_2ael3")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1548979646]
 
@@ -46,7 +46,7 @@ text = "Menu
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=69790976]
 position = Vector2(495, 286.00003)
 scale = Vector2(5.5105486, 3.007)
-texture = ExtResource("1_ykf3q")
+texture = ExtResource("2_vm27y")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=627957952]
 position = Vector2(462, 244)

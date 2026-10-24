@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://b80n6aerrwsay"]
 
-[ext_resource type="Script" uid="uid://bdgpc7rw3kafv" path="res://Level 1/script/level_1.gd" id="1_qlnyv"]
 [ext_resource type="PackedScene" uid="uid://b00b4e6qhqayl" path="res://Main Stuff/Scenes/player.tscn" id="2_b5hdi"]
 [ext_resource type="PackedScene" uid="uid://dkal2rwlw22ds" path="res://Main Stuff/Scenes/killzone.tscn" id="3_johjj"]
 [ext_resource type="PackedScene" uid="uid://de6hl5wvejkoh" path="res://Main Stuff/Scenes/Background.tscn" id="4_nw8nc"]
@@ -8,10 +7,15 @@
 [ext_resource type="Texture2D" uid="uid://dkc7ge3q35pak" path="res://Art/Level 1/spr_tileset_sunnysideworld_16px.png" id="6_j06gw"]
 [ext_resource type="PackedScene" uid="uid://dkqpi4c25bjvu" path="res://Main Stuff/Scenes/enemy_wall.tscn" id="7_v87ok"]
 [ext_resource type="PackedScene" uid="uid://bsh8p73nn2kh6" path="res://Main Stuff/Scenes/checkpoint.tscn" id="8_ath3g"]
-[ext_resource type="Texture2D" uid="uid://i528cra1qsnl" path="res://Art/Level 2/City background sky.png" id="9_r8e7q"]
-[ext_resource type="Texture2D" uid="uid://c7v28nvqdn8mp" path="res://Art/Level 2/City background layer1.png" id="10_du13r"]
-[ext_resource type="Texture2D" uid="uid://d3oq4q35b6pxx" path="res://Art/Level 2/City background layer2.png" id="11_hpfci"]
 [ext_resource type="PackedScene" uid="uid://8kg6sehup13c" path="res://Main Stuff/Scenes/spike.tscn" id="12_kkje1"]
+
+[sub_resource type="GDScript" id="GDScript_04nl3"]
+script/source = "extends Node2D
+
+
+func _on_checkpoint_body_entered(body: Node2D) -> void:
+	get_tree().change_scene_to_file(\"res://Level 2/Scenes/win_screen_lv_2.tscn\")
+"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aes8f"]
 texture = ExtResource("5_unvla")
@@ -3835,9 +3839,9 @@ sources/2 = SubResource("TileSetAtlasSource_n5pco")
 sources/3 = SubResource("TileSetAtlasSource_gh71n")
 
 [node name="level_2_chase" type="Node2D" unique_id=1383139253]
-script = ExtResource("1_qlnyv")
+script = SubResource("GDScript_04nl3")
 
-[node name="level_2_player" parent="." unique_id=1999253205 instance=ExtResource("2_b5hdi")]
+[node name="player" parent="." unique_id=1999253205 instance=ExtResource("2_b5hdi")]
 position = Vector2(363, 337)
 
 [node name="Killzone" parent="." unique_id=1623600835 instance=ExtResource("3_johjj")]
@@ -3854,53 +3858,6 @@ format = 2
 
 [node name="Checkpoint" parent="." unique_id=1885426398 instance=ExtResource("8_ath3g")]
 position = Vector2(4146, 424)
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1830945472]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1011446276]
-position = Vector2(1900, 250)
-motion_scale = Vector2(0.1, 0.1)
-motion_mirroring = Vector2(2048, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1778307261]
-position = Vector2(0, -159.99997)
-scale = Vector2(1, 2.9421966)
-texture = ExtResource("9_r8e7q")
-
-[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=2057191066]
-position = Vector2(1069, -155.99998)
-scale = Vector2(1.0976563, 2.9653177)
-texture = ExtResource("9_r8e7q")
-
-[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground" unique_id=841879430]
-position = Vector2(1900, 250)
-motion_scale = Vector2(0.8, 0.8)
-motion_mirroring = Vector2(2048, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2" unique_id=1809484535]
-position = Vector2(0, -158)
-scale = Vector2(1, 2.9537573)
-texture = ExtResource("10_du13r")
-
-[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2" unique_id=772907636]
-position = Vector2(1078, -150)
-scale = Vector2(1.0976563, 2.965318)
-texture = ExtResource("10_du13r")
-
-[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1424704583]
-position = Vector2(1900, 250)
-motion_scale = Vector2(1.8, 1.8)
-motion_mirroring = Vector2(2048, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3" unique_id=484969651]
-position = Vector2(0, -200)
-scale = Vector2(1, 2.953757)
-texture = ExtResource("11_hpfci")
-
-[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3" unique_id=1474922818]
-position = Vector2(1069, -200)
-scale = Vector2(1.0976563, 2.9653177)
-texture = ExtResource("11_hpfci")
 
 [node name="Spikes" type="Node2D" parent="." unique_id=1778401835]
 

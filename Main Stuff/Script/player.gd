@@ -24,4 +24,4 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 func game_over():
-	get_tree().change_scene_to_file("res://Level 2/Scenes/lose_screen_lv_2.tscn")
+	get_tree().change_scene_to_file("res://Main Menu/Scenes/lose_screen.tscn")

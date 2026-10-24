@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://rvips2wovwb8"]
 
-[ext_resource type="Script" uid="uid://d1iwnp0uhaksk" path="res://Level 1/script/win_screen_lv_2.gd" id="1_f4s25"]
-[ext_resource type="Texture2D" uid="uid://daicpmelbhjyb" path="res://Art/Level 2/image001.png" id="2_f4s25"]
+[ext_resource type="Script" uid="uid://d1iwnp0uhaksk" path="res://Level 1/script/win_screen_lv_2.gd" id="1_fb8ho"]
+[ext_resource type="Texture2D" uid="uid://daicpmelbhjyb" path="res://Art/Level 2/image001.png" id="2_h7e0o"]
 
 [node name="lose_screen_lv2" type="Control" unique_id=1522517263]
 layout_mode = 3
@@ -10,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_f4s25")
+script = ExtResource("1_fb8ho")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1548979646]
 
@@ -78,7 +78,7 @@ grow_vertical = 2
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=69790976]
 position = Vector2(1260, 648)
 scale = Vector2(1.6723999, 2.059015)
-texture = ExtResource("2_f4s25")
+texture = ExtResource("2_h7e0o")
 
 [connection signal="pressed" from="CanvasLayer/Retry" to="." method="_on_retry_pressed"]
 [connection signal="pressed" from="CanvasLayer/menu" to="." method="_on_menu_pressed"]
