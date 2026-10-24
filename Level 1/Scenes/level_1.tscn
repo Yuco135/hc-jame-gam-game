@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b80n6aerrwsay"]
 
-[ext_resource type="PackedScene" uid="uid://b00b4e6qhqayl" path="res://Main Stuff/Scenes/player.tscn" id="2_b5hdi"]
+[ext_resource type="PackedScene" uid="uid://b00b4e6qhqayl" path="res://Player/player.tscn" id="2_b5hdi"]
 [ext_resource type="PackedScene" uid="uid://dkal2rwlw22ds" path="res://Main Stuff/Scenes/killzone.tscn" id="3_johjj"]
 [ext_resource type="PackedScene" uid="uid://de6hl5wvejkoh" path="res://Main Stuff/Scenes/Background.tscn" id="4_nw8nc"]
 [ext_resource type="Texture2D" uid="uid://c0cyaggfxuqgf" path="res://Art/Level 1/arepa pixel art.png" id="5_unvla"]

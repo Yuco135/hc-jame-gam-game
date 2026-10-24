@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b00b4e6qhqayl"]
 
-[ext_resource type="Script" uid="uid://3gv30l2swtxk" path="res://Main Stuff/Script/player.gd" id="1_quswe"]
+[ext_resource type="Script" uid="uid://3gv30l2swtxk" path="res://Player/player.gd" id="1_quswe"]
 [ext_resource type="Texture2D" uid="uid://cb7t1v4hi7ax8" path="res://Art/Player/nathan caterpillar pixel art.png" id="2_oe0oa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w11f4"]
