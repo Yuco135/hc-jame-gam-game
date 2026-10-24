@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b00b4e6qhqayl"]
+
+[ext_resource type="Script" uid="uid://3gv30l2swtxk" path="res://Level 2/script/level_2_player.gd" id="1_5cnj1"]
+[ext_resource type="Texture2D" uid="uid://cb7t1v4hi7ax8" path="res://Art/Player/nathan caterpillar pixel art.png" id="2_o1ubd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w11f4"]
+size = Vector2(306, 182)
+
+[node name="level_2_player" type="CharacterBody2D" unique_id=220968066]
+position = Vector2(459, 351)
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_5cnj1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1657904600]
+texture = ExtResource("2_o1ubd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1319034345]
+position = Vector2(5, 49)
+shape = SubResource("RectangleShape2D_w11f4")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=518127805]
+zoom = Vector2(2, 2)

@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://d22lgactwynyi"]
+
+[ext_resource type="Script" uid="uid://cfex0b7asb7ha" path="res://Level 2/script/lose_screen_lv_2.gd" id="1_rbp0p"]
+[ext_resource type="Texture2D" uid="uid://4qf666jeofpu" path="res://Art/Level 2/dead caterpillar.webp" id="1_ykf3q"]
+
+[node name="lose_screen_lv2" type="Control" unique_id=1522517263]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rbp0p")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1548979646]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=612363071]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -81.5
+offset_top = -38.5
+offset_right = 81.5
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=873387172]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Game Over"
+
+[node name="retry" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=908353842]
+layout_mode = 2
+text = "Retry
+"
+
+[node name="menu" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=404750320]
+layout_mode = 2
+text = "Menu
+"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=69790976]
+position = Vector2(495, 286.00003)
+scale = Vector2(5.5105486, 3.007)
+texture = ExtResource("1_ykf3q")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=627957952]
+position = Vector2(462, 244)
+
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/menu" to="." method="_on_menu_pressed"]

@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://dkqpi4c25bjvu"]
+
+[ext_resource type="Texture2D" uid="uid://d3gb55yxisq2b" path="res://Art/Level 2/wall of hands.png" id="1_n6jqr"]
+[ext_resource type="Script" uid="uid://dp7spm8xu5nqt" path="res://Level 2/script/enemy_wall.gd" id="1_q00ld"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ukuet"]
+size = Vector2(40.799995, 64.100006)
+
+[sub_resource type="Animation" id="Animation_q00ld"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_dgrkd"]
+resource_name = "wall foward"
+length = 500.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335, 500),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 50), Vector2(100000, 50)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4iani"]
+_data = {
+&"RESET": SubResource("Animation_q00ld"),
+&"wall foward": SubResource("Animation_dgrkd")
+}
+
+[node name="Enemy wall" type="Node2D" unique_id=972770249]
+script = ExtResource("1_q00ld")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1659499191]
+position = Vector2(0, 40)
+scale = Vector2(10, 10)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=968521527]
+position = Vector2(-98.199974, -0.44999743)
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_ukuet")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=473710872]
+position = Vector2(-43.299995, 0)
+scale = Vector2(2.3531249, 1)
+texture = ExtResource("1_n6jqr")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D" unique_id=1290331046]
+libraries/ = SubResource("AnimationLibrary_4iani")
+autoplay = &"wall foward"
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=340134684]
+position = Vector2(1473, 278)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

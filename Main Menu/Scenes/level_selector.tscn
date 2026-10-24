@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://ba4urkpbby0cw"]
+
+[ext_resource type="Script" uid="uid://cioxxbltpi3cg" path="res://Main Menu/Scripts/level_selector.gd" id="1_fl7ts"]
+[ext_resource type="Texture2D" uid="uid://djp3bl11cdc72" path="res://Art/Main Menu/Screenshot 2026-08-16 111322.png" id="2_62tqm"]
+
+[node name="Node2D" type="Node2D" unique_id=864744743]
+script = ExtResource("1_fl7ts")
+
+[node name="level_buttons" type="Control" parent="." unique_id=1563802763]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="level1" type="Button" parent="level_buttons" unique_id=397110933]
+layout_mode = 0
+offset_left = 1150.0
+offset_top = 601.0
+offset_right = 1350.0
+offset_bottom = 651.0
+theme_override_font_sizes/font_size = 25
+text = "Level 1: Hungry
+"
+
+[node name="Level 2" type="Button" parent="level_buttons" unique_id=739104996]
+layout_mode = 0
+offset_left = 1161.0
+offset_top = 674.0
+offset_right = 1339.0
+offset_bottom = 717.0
+theme_override_font_sizes/font_size = 25
+text = "Level 2: Chase"
+
+[node name="Back" type="Button" parent="level_buttons" unique_id=2058281464]
+layout_mode = 0
+offset_left = 1150.0
+offset_top = 753.0
+offset_right = 1350.0
+offset_bottom = 803.0
+theme_override_font_sizes/font_size = 25
+text = "Back to Menu
+"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1270070141]
+z_index = -1
+position = Vector2(1301, 717)
+scale = Vector2(3, 3)
+texture = ExtResource("2_62tqm")
+
+[connection signal="pressed" from="level_buttons/level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="level_buttons/Level 2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="level_buttons/Back" to="." method="_on_back_pressed"]
