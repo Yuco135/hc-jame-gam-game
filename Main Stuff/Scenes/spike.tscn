@@ -1,17 +1,17 @@
 [gd_scene format=3 uid="uid://8kg6sehup13c"]
 
-[ext_resource type="Texture2D" uid="uid://b6wh3araher7p" path="res://Art/Level 2/16-bit-spike-Sheet.png" id="1_g1q2m"]
-[ext_resource type="Script" uid="uid://d2c8b5birivl8" path="res://Level 2/script/spike.gd" id="2_d5dyc"]
+[ext_resource type="Texture2D" uid="uid://b6wh3araher7p" path="res://Art/Level 2/16-bit-spike-Sheet.png" id="1_8yfoy"]
+[ext_resource type="Script" uid="uid://d2c8b5birivl8" path="res://Main Stuff/Script/spike.gd" id="2_q31jn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3sy6q"]
 size = Vector2(13, 11.5)
 
 [node name="Spike" type="Sprite2D" unique_id=1310186393]
 scale = Vector2(2, 2)
-texture = ExtResource("1_g1q2m")
+texture = ExtResource("1_8yfoy")
 region_enabled = true
 region_rect = Rect2(0, 0, 15.890945, 16)
-script = ExtResource("2_d5dyc")
+script = ExtResource("2_q31jn")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1206195257]
 

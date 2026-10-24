@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://dkal2rwlw22ds"]
 
-[ext_resource type="Script" uid="uid://dslb674b1wfm0" path="res://Level 2/script/level_2_killzone.gd" id="1_ut0rb"]
+[ext_resource type="Script" uid="uid://dslb674b1wfm0" path="res://Main Stuff/Script/killzone.gd" id="1_hdwrw"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_nr5be"]
 
 [node name="Killzone" type="Area2D" unique_id=1623600835]
-script = ExtResource("1_ut0rb")
+script = ExtResource("1_hdwrw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=530379963]
 shape = SubResource("WorldBoundaryShape2D_nr5be")

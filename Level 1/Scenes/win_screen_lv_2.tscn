@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://rvips2wovwb8"]
 
-[ext_resource type="Script" uid="uid://d1iwnp0uhaksk" path="res://Level 2/script/win_screen_lv_2.gd" id="1_f4s25"]
+[ext_resource type="Script" uid="uid://d1iwnp0uhaksk" path="res://Level 1/script/win_screen_lv_2.gd" id="1_f4s25"]
 [ext_resource type="Texture2D" uid="uid://daicpmelbhjyb" path="res://Art/Level 2/image001.png" id="2_f4s25"]
 
 [node name="lose_screen_lv2" type="Control" unique_id=1522517263]

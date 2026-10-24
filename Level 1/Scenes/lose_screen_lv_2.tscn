@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d22lgactwynyi"]
 
-[ext_resource type="Script" uid="uid://cfex0b7asb7ha" path="res://Level 2/script/lose_screen_lv_2.gd" id="1_rbp0p"]
+[ext_resource type="Script" uid="uid://cfex0b7asb7ha" path="res://Level 1/script/lose_screen_lv_2.gd" id="1_rbp0p"]
 [ext_resource type="Texture2D" uid="uid://4qf666jeofpu" path="res://Art/Level 2/dead caterpillar.webp" id="1_ykf3q"]
 
 [node name="lose_screen_lv2" type="Control" unique_id=1522517263]
