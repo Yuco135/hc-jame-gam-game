@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dkc7ge3q35pak" path="res://Art/Level 1/spr_tileset_sunnysideworld_16px.png" id="6_j06gw"]
 [ext_resource type="PackedScene" uid="uid://dkqpi4c25bjvu" path="res://Main Stuff/Scenes/enemy_wall.tscn" id="7_v87ok"]
 [ext_resource type="PackedScene" uid="uid://bsh8p73nn2kh6" path="res://Main Stuff/Scenes/checkpoint.tscn" id="8_ath3g"]
+[ext_resource type="Script" uid="uid://djjq350xyikmn" path="res://Level 1/Scenes/timer.gd" id="9_f3v0k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aes8f"]
 texture = ExtResource("5_unvla")
@@ -3850,5 +3851,38 @@ format = 2
 
 [node name="Checkpoint" parent="." unique_id=1885426398 instance=ExtResource("8_ath3g")]
 position = Vector2(1431, 340)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=538478954]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1002477336]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -102.5
+offset_right = 89.0
+offset_bottom = 36.0
+grow_horizontal = 2
+script = ExtResource("9_f3v0k")
+
+[node name="Minutes" type="Label" parent="CanvasLayer/Panel" unique_id=749737629]
+layout_mode = 0
+offset_left = 52.0
+offset_right = 94.0
+offset_bottom = 23.0
+text = "00:"
+
+[node name="Seconds" type="Label" parent="CanvasLayer/Panel" unique_id=1017616316]
+layout_mode = 0
+offset_left = 75.0
+offset_right = 117.0
+offset_bottom = 23.0
+text = "16."
+
+[node name="Msecs" type="Label" parent="CanvasLayer/Panel" unique_id=413677644]
+layout_mode = 0
+offset_left = 98.0
+offset_right = 140.0
+offset_bottom = 23.0
+text = "019"
 
 [connection signal="body_entered" from="Checkpoint" to="." method="_on_checkpoint_body_entered"]
