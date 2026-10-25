@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://cm70p1fqbmhh5"]
 
+[ext_resource type="Script" uid="uid://batce05vcshxr" path="res://Art/Cutscenes/cutscene_2.gd" id="1_exx88"]
 [ext_resource type="VideoStream" uid="uid://dtjq8h1stdx5b" path="res://Art/Cutscenes/cutscene 2.ogv" id="1_n51dd"]
 
 [node name="cutscene_2" type="Node2D" unique_id=2023399212]
+script = ExtResource("1_exx88")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=926482654]
 position = Vector2(955, 538)
@@ -15,3 +17,12 @@ offset_bottom = 1289.0
 scale = Vector2(0.6, 0.6)
 stream = ExtResource("1_n51dd")
 autoplay = true
+
+[node name="Menu" type="Button" parent="." unique_id=410618566]
+offset_left = 1388.0
+offset_top = 799.0
+offset_right = 1505.0
+offset_bottom = 830.0
+text = "Back To Menu"
+
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
