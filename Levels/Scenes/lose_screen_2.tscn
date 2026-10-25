@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dqcmx4c0dn4u6"]
+
+[ext_resource type="Script" uid="uid://d24xqqo13hpgh" path="res://Levels/script/lose_screen_2.gd" id="1_83pmn"]
+
+[node name="lose_screen_2" type="Control" unique_id=912238888]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_83pmn")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=12236104]
+
+[node name="Menu" type="Button" parent="CanvasLayer" unique_id=1082618279]
+offset_left = 570.0
+offset_top = 320.0
+offset_right = 634.0
+offset_bottom = 356.0
+theme_override_font_sizes/font_size = 20
+text = "Menu"
+
+[node name="Retry" type="Button" parent="CanvasLayer" unique_id=2088016161]
+offset_left = 569.0
+offset_top = 267.0
+offset_right = 629.0
+offset_bottom = 303.0
+theme_override_font_sizes/font_size = 20
+text = "Retry
+"
+
+[node name="Lose" type="Label" parent="CanvasLayer" unique_id=885825495]
+offset_left = 540.0
+offset_top = 214.0
+offset_right = 659.0
+offset_bottom = 256.0
+theme_override_font_sizes/font_size = 30
+text = "You lose"
+
+[connection signal="pressed" from="CanvasLayer/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="CanvasLayer/Retry" to="." method="_on_retry_pressed"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djp3bl11cdc72"
-path="res://.godot/imported/Screenshot 2026-08-16 111322.png-651b035a6a30c22311a2a0505fad2e60.ctex"
+uid="uid://b7pl5runc0hij"
+path="res://.godot/imported/genie lamp.png-879cb9cf8c442616791e60da23cedddd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Main Menu/Screenshot 2026-08-16 111322.png"
-dest_files=["res://.godot/imported/Screenshot 2026-08-16 111322.png-651b035a6a30c22311a2a0505fad2e60.ctex"]
+source_file="res://Jame Gam cutscene/genie lamp.png"
+dest_files=["res://.godot/imported/genie lamp.png-879cb9cf8c442616791e60da23cedddd.ctex"]
 
 [params]
 

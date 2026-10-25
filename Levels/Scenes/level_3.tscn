@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c5wen8stk2lry"]
 
-[ext_resource type="Script" uid="uid://c4serhyposqc6" path="res://Levels/Scenes/level_3.gd" id="1_a7605"]
+[ext_resource type="Script" uid="uid://c4serhyposqc6" path="res://Levels/script/level_3.gd" id="1_a7605"]
 [ext_resource type="PackedScene" uid="uid://8kg6sehup13c" path="res://Main Stuff/Scenes/spike.tscn" id="1_u75ak"]
 [ext_resource type="PackedScene" uid="uid://de6hl5wvejkoh" path="res://Main Stuff/Scenes/Background.tscn" id="2_ynu2p"]
 [ext_resource type="PackedScene" uid="uid://dkal2rwlw22ds" path="res://Main Stuff/Scenes/killzone.tscn" id="3_a7605"]

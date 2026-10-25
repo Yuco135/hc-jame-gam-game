@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://b50ohfeep2ygd"]
+
+[ext_resource type="Script" uid="uid://cplcd3vwuqot2" path="res://Levels/script/win_screen_3.gd" id="1_5qr1c"]
+
+[node name="win_screen_3" type="Control" unique_id=1841470216]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5qr1c")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2105014708]
+
+[node name="Next" type="Button" parent="CanvasLayer" unique_id=402634877]
+offset_left = 486.0
+offset_top = 219.0
+offset_right = 596.0
+offset_bottom = 255.0
+theme_override_font_sizes/font_size = 20
+text = "Next Level
+"
+
+[node name="retry" type="Button" parent="CanvasLayer" unique_id=1752382116]
+offset_left = 511.0
+offset_top = 262.0
+offset_right = 571.0
+offset_bottom = 298.0
+theme_override_font_sizes/font_size = 20
+text = "Retry"
+
+[node name="menu" type="Button" parent="CanvasLayer" unique_id=990849073]
+offset_left = 510.0
+offset_top = 307.0
+offset_right = 574.0
+offset_bottom = 343.0
+theme_override_font_sizes/font_size = 20
+text = "Menu"
+
+[node name="Win text" type="Label" parent="CanvasLayer" unique_id=929662447]
+offset_left = 481.0
+offset_top = 177.0
+offset_right = 596.0
+offset_bottom = 219.0
+theme_override_font_sizes/font_size = 30
+text = "You win"
+
+[node name="Time" type="Label" parent="CanvasLayer" unique_id=969139066]
+offset_left = 497.0
+offset_top = 149.0
+offset_right = 570.0
+offset_bottom = 172.0
+text = "00:00.000"
+
+[connection signal="pressed" from="CanvasLayer/Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="CanvasLayer/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="CanvasLayer/menu" to="." method="_on_menu_pressed"]

@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://d22lgactwynyi"]
 
-[ext_resource type="Script" uid="uid://cfex0b7asb7ha" path="res://Main Stuff/Script/lose_screen.gd" id="1_2ael3"]
+[ext_resource type="Script" uid="uid://cfex0b7asb7ha" path="res://Levels/script/lose_screen.gd" id="1_qh50d"]
 
-[node name="lose_screen_lv2" type="Control" unique_id=1522517263]
+[node name="lose_screen" type="Control" unique_id=1522517263]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_2ael3")
+script = ExtResource("1_qh50d")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1548979646]
 

@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://bou6eb3crwrde"]
+
+[ext_resource type="Script" uid="uid://io04a285m5h4" path="res://Levels/script/win_screen_2.gd" id="1_cxfkb"]
+
+[node name="Control" type="Control" unique_id=1629048732]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cxfkb")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=619821237]
+
+[node name="FinalTime" type="Label" parent="CanvasLayer" unique_id=850608005]
+offset_left = 540.0
+offset_top = 174.0
+offset_right = 613.0
+offset_bottom = 197.0
+text = "00:00.000"
+
+[node name="win" type="Label" parent="CanvasLayer" unique_id=726841638]
+offset_left = 521.0
+offset_top = 206.0
+offset_right = 636.0
+offset_bottom = 248.0
+theme_override_font_sizes/font_size = 30
+text = "You win"
+
+[node name="Again" type="Button" parent="CanvasLayer" unique_id=70289241]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.43500003
+anchor_right = 0.5
+anchor_bottom = 0.43500003
+offset_left = -68.0
+offset_top = 40.119965
+offset_right = 80.0
+offset_bottom = 83.119965
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Again"
+
+[node name="Menu" type="Button" parent="CanvasLayer" unique_id=1397737629]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -68.0
+offset_top = 59.0
+offset_right = 81.0
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 25
+text = "Menu"
+
+[node name="Next" type="Button" parent="CanvasLayer" unique_id=169266321]
+offset_left = 516.0
+offset_top = 258.0
+offset_right = 645.0
+offset_bottom = 301.0
+theme_override_font_sizes/font_size = 25
+text = "Next level"
+
+[connection signal="pressed" from="CanvasLayer/Again" to="." method="_on_again_pressed"]
+[connection signal="pressed" from="CanvasLayer/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="CanvasLayer/Next" to="." method="_on_next_pressed"]
