@@ -30,28 +30,19 @@ text = "Start"
 
 [node name="Levels" type="Button" parent="button_manager" unique_id=1923025226]
 layout_mode = 0
-offset_left = 1121.0
-offset_top = 750.0
-offset_right = 1437.0
-offset_bottom = 857.0
+offset_left = 1120.0
+offset_top = 731.0
+offset_right = 1436.0
+offset_bottom = 838.0
 theme_override_font_sizes/font_size = 25
 text = "Levels"
 
-[node name="Quit" type="Button" parent="button_manager" unique_id=1545138361]
-layout_mode = 0
-offset_left = 1121.0
-offset_top = 1000.0
-offset_right = 1435.0
-offset_bottom = 1102.0
-theme_override_font_sizes/font_size = 25
-text = "Quit"
-
 [node name="Credits" type="Button" parent="button_manager" unique_id=289926236]
 layout_mode = 0
-offset_left = 1671.0
-offset_top = 786.0
-offset_right = 1816.0
-offset_bottom = 849.0
+offset_left = 1125.0
+offset_top = 940.0
+offset_right = 1434.0
+offset_bottom = 1043.0
 theme_override_font_sizes/font_size = 40
 text = "Credits
 "
@@ -61,5 +52,4 @@ position = Vector2(1305, 789)
 
 [connection signal="pressed" from="button_manager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="button_manager/Levels" to="." method="_on_levels_pressed"]
-[connection signal="pressed" from="button_manager/Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="button_manager/Credits" to="." method="_on_credits_pressed"]

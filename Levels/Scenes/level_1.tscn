@@ -1796,13 +1796,6 @@ offset_left = 533.0
 offset_right = 575.0
 offset_bottom = 23.0
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1882834567]
-offset_left = 533.0
-offset_top = 21.0
-offset_right = 606.0
-offset_bottom = 25.0
-color = Color(0.18837145, 0.18837145, 0.18837145, 1)
-
 [node name="Enemy wall" parent="." unique_id=972770249 instance=ExtResource("8_64ajf")]
 
 [node name="Single Platforn" type="Node2D" parent="." unique_id=712728770]

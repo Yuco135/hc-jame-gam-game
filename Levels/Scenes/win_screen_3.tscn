@@ -19,8 +19,7 @@ offset_top = 219.0
 offset_right = 596.0
 offset_bottom = 255.0
 theme_override_font_sizes/font_size = 20
-text = "Next Level
-"
+text = "Finish"
 
 [node name="retry" type="Button" parent="CanvasLayer" unique_id=1752382116]
 offset_left = 511.0
@@ -47,10 +46,10 @@ theme_override_font_sizes/font_size = 30
 text = "You win"
 
 [node name="Time" type="Label" parent="CanvasLayer" unique_id=969139066]
-offset_left = 497.0
-offset_top = 149.0
-offset_right = 570.0
-offset_bottom = 172.0
+offset_left = 500.0
+offset_top = 146.0
+offset_right = 573.0
+offset_bottom = 169.0
 text = "00:00.000"
 
 [connection signal="pressed" from="CanvasLayer/Next" to="." method="_on_next_pressed"]

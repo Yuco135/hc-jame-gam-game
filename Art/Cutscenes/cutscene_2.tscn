@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cm70p1fqbmhh5"]
+
+[ext_resource type="VideoStream" uid="uid://dtjq8h1stdx5b" path="res://Art/Cutscenes/cutscene 2.ogv" id="1_n51dd"]
+
+[node name="cutscene_2" type="Node2D" unique_id=2023399212]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=926482654]
+position = Vector2(955, 538)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1231083425]
+offset_left = 334.00003
+offset_top = 209.0
+offset_right = 2458.0
+offset_bottom = 1289.0
+scale = Vector2(0.6, 0.6)
+stream = ExtResource("1_n51dd")
+autoplay = true

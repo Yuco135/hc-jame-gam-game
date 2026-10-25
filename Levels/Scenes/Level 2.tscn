@@ -144,15 +144,4 @@ offset_right = 20.0
 offset_bottom = 23.0
 grow_horizontal = 2
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=644070575]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -36.0
-offset_top = 21.0
-offset_right = 38.0
-offset_bottom = 28.0
-grow_horizontal = 2
-color = Color(0.18837145, 0.18837145, 0.18837145, 1)
-
 [connection signal="body_entered" from="Checkpoint" to="." method="_on_checkpoint_body_entered"]
