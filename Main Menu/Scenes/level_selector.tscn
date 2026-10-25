@@ -52,6 +52,9 @@ position = Vector2(1301, 717)
 scale = Vector2(3, 3)
 texture = ExtResource("2_62tqm")
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=135185371]
+position = Vector2(1257, 697)
+
 [connection signal="pressed" from="level_buttons/level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="level_buttons/Level 2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="level_buttons/Back" to="." method="_on_back_pressed"]

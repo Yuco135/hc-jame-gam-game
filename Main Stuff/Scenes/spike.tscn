@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://8kg6sehup13c"]
 
-[ext_resource type="Texture2D" uid="uid://b6wh3araher7p" path="res://Art/Level 2/16-bit-spike-Sheet.png" id="1_8yfoy"]
+[ext_resource type="Texture2D" uid="uid://b6wh3araher7p" path="res://Art/Level Art/16-bit-spike-Sheet.png" id="1_8yfoy"]
 [ext_resource type="Script" uid="uid://d2c8b5birivl8" path="res://Main Stuff/Script/spike.gd" id="2_q31jn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3sy6q"]

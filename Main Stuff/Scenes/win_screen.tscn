@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://rvips2wovwb8"]
 
-[ext_resource type="Script" uid="uid://d1iwnp0uhaksk" path="res://Level 1/script/win_screen_lv_2.gd" id="1_fb8ho"]
-[ext_resource type="Texture2D" uid="uid://daicpmelbhjyb" path="res://Art/Level 2/image001.png" id="2_h7e0o"]
+[ext_resource type="Script" uid="uid://d1iwnp0uhaksk" path="res://Levels/script/win_screen_lv_2.gd" id="1_fb8ho"]
 
 [node name="lose_screen_lv2" type="Control" unique_id=1522517263]
 layout_mode = 3
@@ -75,10 +74,12 @@ offset_bottom = 38.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=69790976]
-position = Vector2(1260, 648)
-scale = Vector2(1.6723999, 2.059015)
-texture = ExtResource("2_h7e0o")
+[node name="Time" type="Label" parent="CanvasLayer" unique_id=1143996751]
+offset_left = 543.0
+offset_top = 128.0
+offset_right = 607.0
+offset_bottom = 151.0
+text = "0:00.000"
 
 [connection signal="pressed" from="CanvasLayer/Retry" to="." method="_on_retry_pressed"]
 [connection signal="pressed" from="CanvasLayer/menu" to="." method="_on_menu_pressed"]

@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://dngakdvora115"]
 
 [ext_resource type="Script" uid="uid://dgnegmsg41dl" path="res://Main Menu/Scripts/main_menu.gd" id="1_4k6x5"]
-[ext_resource type="Texture2D" uid="uid://djp3bl11cdc72" path="res://Art/Main Menu/Screenshot 2026-08-16 111322.png" id="2_4k6x5"]
 
 [node name="Main Menu" type="Node2D" unique_id=557621919]
 position = Vector2(-6, 0)
@@ -57,11 +56,8 @@ theme_override_font_sizes/font_size = 40
 text = "Credits
 "
 
-[node name="background" type="Sprite2D" parent="." unique_id=278898658]
-z_index = -1
-position = Vector2(1268, 715)
-scale = Vector2(3, 3)
-texture = ExtResource("2_4k6x5")
+[node name="Camera2D" type="Camera2D" parent="." unique_id=864402734]
+position = Vector2(1305, 789)
 
 [connection signal="pressed" from="button_manager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="button_manager/Levels" to="." method="_on_levels_pressed"]

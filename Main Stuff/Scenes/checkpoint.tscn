@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bsh8p73nn2kh6"]
 
-[ext_resource type="Texture2D" uid="uid://bjw5vjkaxv2mm" path="res://Art/Level 2/flag-a.png" id="1_8uhqu"]
+[ext_resource type="Texture2D" uid="uid://bjw5vjkaxv2mm" path="res://Art/Level Art/flag-a.png" id="1_8uhqu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w11f4"]
 size = Vector2(32.5, 47)
@@ -97,3 +97,5 @@ sprite_frames = SubResource("SpriteFrames_3sy6q")
 autoplay = "default"
 frame = 2
 frame_progress = 0.822664
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

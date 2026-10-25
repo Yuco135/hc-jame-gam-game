@@ -27,7 +27,7 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 30
 text = "Lead Idea designer: Liz"
 
-[node name="Sam" type="Label" parent="." unique_id=468304444]
+[node name="Character" type="Label" parent="." unique_id=468304444]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -41,7 +41,7 @@ offset_bottom = 88.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 30
-text = "Lead Artist: Samantha"
+text = "character art"
 
 [node name="Liz" type="Label" parent="." unique_id=43558238]
 layout_mode = 1

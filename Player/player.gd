@@ -5,7 +5,7 @@ const DASH_SPEED = 1000.0
 var dashing = false
 var can_dash = true 
 
-const JUMP_VELOCITY = -450.0
+const JUMP_VELOCITY = -500.0
 var jump_count = 0
 
 const wall_jump_pushback = 400

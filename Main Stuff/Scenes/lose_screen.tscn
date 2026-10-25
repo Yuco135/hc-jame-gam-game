@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://d22lgactwynyi"]
 
 [ext_resource type="Script" uid="uid://cfex0b7asb7ha" path="res://Main Stuff/Script/lose_screen.gd" id="1_2ael3"]
-[ext_resource type="Texture2D" uid="uid://4qf666jeofpu" path="res://Art/Level 2/dead caterpillar.webp" id="2_vm27y"]
 
 [node name="lose_screen_lv2" type="Control" unique_id=1522517263]
 layout_mode = 3
@@ -42,11 +41,6 @@ text = "Retry
 layout_mode = 2
 text = "Menu
 "
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=69790976]
-position = Vector2(495, 286.00003)
-scale = Vector2(5.5105486, 3.007)
-texture = ExtResource("2_vm27y")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=627957952]
 position = Vector2(462, 244)
