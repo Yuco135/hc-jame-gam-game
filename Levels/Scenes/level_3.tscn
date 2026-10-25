@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c5wen8stk2lry"]
+
+[ext_resource type="PackedScene" uid="uid://8kg6sehup13c" path="res://Main Stuff/Scenes/spike.tscn" id="1_u75ak"]
+[ext_resource type="PackedScene" uid="uid://de6hl5wvejkoh" path="res://Main Stuff/Scenes/Background.tscn" id="2_ynu2p"]
+[ext_resource type="PackedScene" uid="uid://dkal2rwlw22ds" path="res://Main Stuff/Scenes/killzone.tscn" id="3_a7605"]
+[ext_resource type="PackedScene" uid="uid://bsh8p73nn2kh6" path="res://Main Stuff/Scenes/checkpoint.tscn" id="4_h5eo4"]
+[ext_resource type="PackedScene" uid="uid://b00b4e6qhqayl" path="res://Player/player.tscn" id="5_e07v5"]
+[ext_resource type="PackedScene" uid="uid://dkqpi4c25bjvu" path="res://Main Stuff/Scenes/enemy_wall.tscn" id="6_wvdmu"]
+
+[node name="level 3" type="Node2D" unique_id=1319625838]
+
+[node name="Spike" parent="." unique_id=1310186393 instance=ExtResource("1_u75ak")]
+
+[node name="TileMap" parent="." unique_id=656518706 instance=ExtResource("2_ynu2p")]
+
+[node name="Killzone" parent="." unique_id=1623600835 instance=ExtResource("3_a7605")]
+
+[node name="Checkpoint" parent="." unique_id=1885426398 instance=ExtResource("4_h5eo4")]
+
+[node name="player" parent="." unique_id=220968066 instance=ExtResource("5_e07v5")]
+
+[node name="Enemy wall" parent="." unique_id=972770249 instance=ExtResource("6_wvdmu")]
