@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bj61kjelwed8m"]
+
+[ext_resource type="Script" uid="uid://xpefkojjqqyh" path="res://Art/Cutscenes/cutscene_1.gd" id="1_od7yn"]
+[ext_resource type="VideoStream" uid="uid://c47lxyq2svdus" path="res://Art/Cutscenes/cutscene1.ogv" id="1_ytnbi"]
+
+[node name="cutscene_1" type="Node2D" unique_id=2039922232]
+script = ExtResource("1_od7yn")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1264971079]
+offset_top = 4.0
+offset_right = 1920.0
+offset_bottom = 1084.0
+stream = ExtResource("1_ytnbi")
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=91307556]
+position = Vector2(960, 544)
+zoom = Vector2(0.6, 0.6)
+
+[node name="Button" type="Button" parent="." unique_id=1318351666]
+offset_left = 1759.0
+offset_top = 993.0
+offset_right = 1886.0
+offset_bottom = 1065.0
+theme_override_font_sizes/font_size = 20
+text = "Next"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

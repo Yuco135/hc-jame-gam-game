@@ -12,4 +12,7 @@ func _process(delta: float) -> void:
 	$CanvasLayer/TimeLabel.text = GlobalTimer.get_current_game_time_string()
 	if Input.is_action_just_pressed("restart"):
 		get_tree().reload_current_scene()
-		GlobalTimer.time = 0
+		
+
+func _ready() -> void:
+	GlobalTimer.start_game_timing()
