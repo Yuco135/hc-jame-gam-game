@@ -51,7 +51,6 @@ offset_top = 132.0
 offset_right = 594.0
 offset_bottom = 160.0
 theme_override_font_sizes/font_size = 20
-text = "00:00.000"
 
 [connection signal="pressed" from="CanvasLayer/Next" to="." method="_on_next_pressed"]
 [connection signal="pressed" from="CanvasLayer/Retry" to="." method="_on_retry_pressed"]

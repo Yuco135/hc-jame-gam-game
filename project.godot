@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.7", "GL Compatibility")
 [autoload]
 
 GlobalTimer="*uid://djjq350xyikmn"
+PreviousScenes="*uid://bnq488h2cmh8t"
 
 [display]
 

@@ -187,7 +187,7 @@ position = Vector2(110, -1553)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2141564077]
 
-[node name="Label" type="Label" parent="CanvasLayer" unique_id=497567345]
+[node name="Timer" type="Label" parent="CanvasLayer" unique_id=497567345]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
