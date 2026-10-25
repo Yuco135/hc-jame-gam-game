@@ -1,2 +1,3 @@
-# hc-jame-gam-game-
-git for jame gam game jam from hack club
+# Lava rise
+You set the devil free and must climb the tower to seal him while running away from the rising lava.
+
