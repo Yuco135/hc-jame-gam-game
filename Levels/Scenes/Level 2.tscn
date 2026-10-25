@@ -74,6 +74,18 @@ position = Vector2(1580, 450)
 [node name="single_use_platform15" parent="single Platform" unique_id=1024465792 instance=ExtResource("1_vbaxc")]
 position = Vector2(1740, 450)
 
+[node name="single_use_platform16" parent="single Platform" unique_id=799203969 instance=ExtResource("1_vbaxc")]
+position = Vector2(1303, -482)
+
+[node name="single_use_platform17" parent="single Platform" unique_id=1783910348 instance=ExtResource("1_vbaxc")]
+position = Vector2(1533, -788)
+
+[node name="single_use_platform18" parent="single Platform" unique_id=4337223 instance=ExtResource("1_vbaxc")]
+position = Vector2(1123, -1031)
+
+[node name="single_use_platform19" parent="single Platform" unique_id=779622471 instance=ExtResource("1_vbaxc")]
+position = Vector2(1479, -1203)
+
 [node name="Spikes" type="Node2D" parent="." unique_id=1297076053]
 
 [node name="Spike" parent="Spikes" unique_id=1310186393 instance=ExtResource("7_gpfhj")]

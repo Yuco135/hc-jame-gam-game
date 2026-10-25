@@ -16,7 +16,7 @@ func get_current_game_time_string() -> String:
 	var timestring = "%02d:%02d.%03d"%[(duration / 60000), (duration / 1000) % 60, duration % 1000]
 	return timestring
 	
-	
+
 func stop() -> void:
 	set_process(false) 
 	
